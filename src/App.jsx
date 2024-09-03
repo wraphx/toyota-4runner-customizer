@@ -13,19 +13,19 @@ export default function App() {
     <CustomizationProvider>
       <div className="App">
       <Loader />
-        <Canvas castShadow camera={{ position: [0, 50, 0], fov:35 }}>
+      <Canvas shadows camera={{ position: [0, 0, 20], fov:50 }}>
 
           <Suspense fallback={null}>
-          <Runner4 scale={5.5} position={[0, -0.1, 0]} />
+          <Runner4 scale={3} position={[0, 0, 0]} />
           </Suspense>
           <hemisphereLight intensity={0.5} />
-          <ContactShadows  position={[0, -.1, 0]} scale={40} blur={2.5} opacity={.8} far={20} />
-          <ContactShadows position={[0, -.1, 0.0]} opacity={2} scale={40} blur={2.5} far={0.8} />
+          <ContactShadows  position={[0, 0, 0]} scale={40} blur={2.5} opacity={.8} far={20} />
+          <ContactShadows position={[0, 0, 0.0]} opacity={2} scale={40} blur={2.5} far={0.8} />
           <ambientLight intensity={0.7} />
           <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
 
           {/* <Environment preset="city" /> */}
-          <Environment resolution={1024} files="/public/zwartkops_straight_sunset_2k.hdr" background ground={{ height: 50, radius: 200, scale: 50 }}>
+          <Environment resolution={1024} files="/studio_small_08_2k.hdr" background ground={{ height: 50, radius: 200, scale: 50 }}>
            
           </Environment>
           
