@@ -68,7 +68,7 @@ console.log()
       <mesh geometry={nodes.Object_22.geometry} material={materials.Tail_Lights} />
       <mesh geometry={nodes.Object_24.geometry} material={materials.Mirrors} />
       <mesh geometry={nodes.Body.geometry}>
-        <meshStandardMaterial {...materials.BaseMtl} color={overlay==1 || overlay==13 ? (snap1.base.BaseMtl!=="none" ? snap1.base.BaseMtl : 0xffffff) : 0xffffff}>
+        <meshStandardMaterial {...materials.BaseMtl} color={overlay==1 || overlay==13 || overlay==34 ? (snap1.base.BaseMtl!=="none" ? snap1.base.BaseMtl : 0xffffff) : 0xffffff}>
           <canvasTexture
             flipY={false}
             wrapS={1000}
